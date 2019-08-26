@@ -35,6 +35,9 @@ public class ProgramacaoLinear {
 		case 8:
 			Ex08();
 			break;
+		case 11:
+			Ex11();
+			break;
 		}
 
 		sc.close();
@@ -178,6 +181,20 @@ public class ProgramacaoLinear {
 		double valor = deposito * 1.013;
 		
 		System.out.println("Seu valor após 1 mês é: " + valor);
+	}
+	
+	public static void Ex11() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o valor do raio: ");
+		int raio = sc.nextInt();
+
+		sc.close();
+		
+		double comprimento = 2 * Math.PI * raio;
+		
+		System.out.println("O comprimento da circunferencia é: " + comprimento);
 	}
 
 }
