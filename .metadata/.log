@@ -71,6 +71,7 @@ Contains: C:\Users\nicollidm\Music\LP overlaps the workspace location: C:\Users\
 !MESSAGE OK
 !SUBENTRY 2 org.eclipse.core.resources 4 77 2019-08-26 15:38:42.205
 !MESSAGE C:\Users\nicollidm\Music\LP overlaps the workspace location: C:\Users\nicollidm\Music\LP
+<<<<<<< HEAD
 !SESSION 2019-08-26 16:45:02.257 -----------------------------------------------
 eclipse.buildId=4.12.0.I20190605-1800
 java.version=1.8.0_201
@@ -88,3 +89,5 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+>>>>>>> 59faa112ea7a40dd4680eb8e31d5ebf80a657538
