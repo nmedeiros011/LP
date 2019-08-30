@@ -3,50 +3,8 @@ package Lote01;
 import java.util.Scanner;
 
 public class ProgramacaoLinear {
-	public static void main(String[] args) {
 
-		System.out.println("Digite o número do exercício desejado: ");
-
-		Scanner sc = new Scanner(System.in);
-		int ex = sc.nextInt();
-
-		switch (ex) {
-		case 1:
-			Ex01();
-			break;
-		case 2:
-			Ex02();
-			break;
-		case 3:
-			Ex03();
-			break;
-		case 4:
-			Ex04();
-			break;
-		case 5:
-			Ex05();
-			break;
-		case 6:
-			Ex06();
-			break;
-		case 7:
-			Ex07();
-			break;
-		case 8:
-			Ex08();
-			break;
-		case 11:
-			Ex11();
-			break;
-		case 12:
-			Ex12();
-			break;
-		}
-
-		sc.close();
-	}
-
-	public static void Ex01() {
+	public void Ex01() {
 
 		System.out.println("Digite o valor do lado do quadrado: ");
 
@@ -59,7 +17,7 @@ public class ProgramacaoLinear {
 		System.out.println("A area do quadrado é: " + area);
 	}
 
-	public static void Ex02() {
+	public void Ex02() {
 
 		System.out.println("Digite o salário do funcionário: ");
 
@@ -72,7 +30,7 @@ public class ProgramacaoLinear {
 		System.out.println("Seu novo salário é: " + salario);
 	}
 
-	public static void Ex03() {
+	public void Ex03() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -89,7 +47,7 @@ public class ProgramacaoLinear {
 		System.out.println("Sua área é: " + area);
 	}
 
-	public static void Ex04() {
+	public void Ex04() {
 
 		System.out.println("Digite a temperatura em graus Celsius: ");
 
@@ -102,7 +60,7 @@ public class ProgramacaoLinear {
 		System.out.println("Sua temperatura em fahrenheit: " + f);
 	}
 
-	public static void Ex05() {
+	public void Ex05() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -122,17 +80,17 @@ public class ProgramacaoLinear {
 		if (delta < 0) {
 			System.out.println("Não existem raízes reais");
 		} else {
-			
+
 			double raiz1 = ((b * -1) + Math.sqrt(delta)) / 2 * a;
 			double raiz2 = ((b * -1) - Math.sqrt(delta)) / 2 * a;
-			
+
 			System.out.println("As raízes da equação são: ");
 			System.out.println("Raiz 1: " + raiz1);
 			System.out.println("Raiz 2: " + raiz2);
 		}
 	}
-	
-	public static void Ex06() {
+
+	public void Ex06() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -143,16 +101,16 @@ public class ProgramacaoLinear {
 		int y = sc.nextInt();
 
 		sc.close();
-		
+
 		int aux = x;
 		x = y;
 		y = aux;
-		
+
 		System.out.println("Novo valor de 'x': " + x);
 		System.out.println("Novo valor de 'y': " + y);
 	}
-	
-	public static void Ex07() {
+
+	public void Ex07() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -161,18 +119,18 @@ public class ProgramacaoLinear {
 
 		System.out.println("Digite o valor da largura: ");
 		int l = sc.nextInt();
-		
+
 		System.out.println("Digite o valor da altura: ");
 		int h = sc.nextInt();
 
 		sc.close();
-		
+
 		int v = c * l * h;
-		
+
 		System.out.println("Seu volume é: " + v);
 	}
-	
-	public static void Ex08() {
+
+	public void Ex08() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -180,13 +138,13 @@ public class ProgramacaoLinear {
 		int deposito = sc.nextInt();
 
 		sc.close();
-		
+
 		double valor = deposito * 1.013;
-		
+
 		System.out.println("Seu valor após 1 mês é: " + valor);
 	}
-	
-	public static void Ex11() {
+
+	public void Ex11() {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -194,27 +152,74 @@ public class ProgramacaoLinear {
 		int raio = sc.nextInt();
 
 		sc.close();
-		
+
 		double comprimento = 2 * Math.PI * raio;
-		
+
 		System.out.println("O comprimento da circunferencia é: " + comprimento);
 	}
-	
-	public static void Ex12() {
+
+	public void Ex12() {
 
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Digite seu ano de nascimento: ");
 		int nascimento = sc.nextInt();
-		
+
 		System.out.println("Digite o ano atual: ");
 		int atual = sc.nextInt();
 
 		sc.close();
-		
+
 		int idade = atual - nascimento + 17;
-		
+
 		System.out.println("Sua idade daqui 17 anos será: " + idade);
 	}
 
+	public void Ex13() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade do alimento em kg: ");
+		float kg = sc.nextFloat();
+
+		int dias = (int) Math.ceil(kg / 0.05);
+
+		System.out.println("O alimento durará " + dias + " dias.");
+
+		sc.close();
+	}
+
+	public void Ex14() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o primeiro angulo: ");
+		int angulo1 = sc.nextInt();
+
+		System.out.println("Digite o segundo angulo: ");
+		int angulo2 = sc.nextInt();
+
+		int angulo3 = 180 - angulo1 - angulo2;
+
+		System.out.println("O terceiro angulo é: " + angulo3 + "º");
+
+		sc.close();
+	}
+
+	public void Ex15() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o valor do cateto oposto: ");
+		int oposto = sc.nextInt();
+
+		System.out.println("Digite o valor do cateto adjacente: ");
+		int adjacente = sc.nextInt();
+
+		float hipo = oposto / adjacente;
+
+		System.out.println("O valor da hipotenusa é: " + hipo);
+
+		sc.close();
+	}
 }
